@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+}
+
+.sidebar-left-container {
+    position: fixed;
+    width: 88px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #2566F3 0%, #164BBD 100%);
+    background-repeat: no-repeat;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.vertical-nav {
+    flex-wrap: nowrap;
+}
+
+.button {
+    width: 3rem;
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: auto;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.button-chat {
+    background-image: url(../image/chat.png);
+}
+
+.button-notification {
+    background-image: url(../image/notification.png);
+}
+
+.button-patients {
+    background-image: url(../image/patients.png);
+}
+
+.button-pharmacy {
+    background-image: url(../image/pharmacy.png);
+}
+
+
+
+#main-content {
+    margin-left: 80px;
+    margin-right: 344px;
+}
+
+.chat-head-container {
+    background-color: #F2F2F2;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+/* .swiper-container {
+    width: 100%;
+    height: 300px;
+} */
+
+
+#sidebar-right div{
+    position: fixed;
+    width: 344px;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    overflow-y: scroll;
+
+    background: #212839;
+    border-radius: 20px 0 0 20px;    
+}
