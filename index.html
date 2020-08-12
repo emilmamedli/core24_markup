@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/toggle.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -15,33 +16,45 @@
     <body>
         <section id="sidebar-left">
             <div class="sidebar-left-container">
-                <div class="mt-4 text-center">
-                    <a href="#"><img src="image/logo.png" alt="" class="logo"></a>
-                </div>
-                <nav class="nav flex-column justify-content-center text-center h-75 vertical-nav";
-                justify-content: center;">
-                    <a class="nav-link my-2 button button-chat active" href="#"></a>
-                    <a class="nav-link my-2 button button-patients" href="#"></a>
-                    <a class="nav-link my-2 button button-pharmacy" href="#"></a>
-                    <a class="nav-link my-2 button button-notification" href="#"></a>
-                </nav>
-                <div class="text-center">
-                    <input type="checkbox" id="switch" class="checkbox" checked />
-                    <label for="switch" class="toggle">
-                        <p></p>
-                    </label>
+                <div class="py-4 d-flex flex-column justify-content-between h-100">
+                    <div class="text-center">
+                        <a href="#"><img src="image/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div>
+                        <nav class="nav flex-column justify-content-center text-center vertical-nav">
+                            <a class="nav-link my-2 button button-chat active" href="#"></a>
+                            <a class="nav-link my-2 button button-patients" href="#"></a>
+                            <a class="nav-link my-2 button button-pharmacy" href="#"></a>
+                            <a class="nav-link my-2 button button-notification" href="#"></a>
+                        </nav>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="text-center mb-2 doctor-avatar-container">
+                                <a href="#"><img src="image/avatar.png" alt="" class="rounded-circle img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="checkbox" id="switch" class="checkbox" checked/>
+                            <span class="switch-title title-not-checked mb-2">Müraciət qəbul et</span>
+                            <span class="switch-title title-checked mb-2">Müraciət qəbul etmə</span>
+                            <label for="switch" class="toggle">
+                                <p></p>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="main-content">
-            <div class="container-fluid">
+            <div class="container-fluid m-4">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="chat-head-container m-4">
+                    <div class="col-12 p-0">
+                        <div class="chat-head-container">
                             <!-- Swiper -->
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide"></div>
                                 <div class="swiper-slide">Slide 2</div>
                                 <div class="swiper-slide">Slide 3</div>
                                 <div class="swiper-slide">Slide 4</div>
@@ -55,8 +68,49 @@
                                 <!-- Add Scrollbar -->
                                 <div class="swiper-scrollbar"></div>
                             </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 d-flex">
+                        <div>
+                            <img src="image/avatar.png" alt="avatar" class="rounded-circle avatar">
                         </div>
-                        
+                        <div class="ml-3">
+                            <span class="profile-name">Bella</span>
+                            <div class="profile-info-block">
+                                <span>14.02.1978</span>|
+                                <span>L45DS56</span>|
+                                <span>+99470 290 09 13</span>|
+                                <span>Atəşgah sığorta</span>|
+                                <span>202984</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="service-container d-flex justify-content-between">
+                            <div class="row w-100">
+                                <div class="col-lg-5">
+                                    <div>
+                                        <div>
+                                            <span>Xidmət növünü seçin</span>
+                                        </div>
+                                        <div>
+                                            <span class="service-info">Lorem Ipsum is simply dummy text of the printing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="text-md-right">
+                                        <button href="#" class="btn text-white btn-info-service mr-3">İnformasiya xidməti</button>
+                                        <button href="#" class="btn text-white btn-medicament-request mr-3">Dərman sifarişi</button>
+                                        <button href="#" class="btn text-white btn-consultation">Konsultasiya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,16 +125,22 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
         <script>
 
-            var swiper = new Swiper('.swiper-container', {
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    hide: true,
-                },
-            });
+            // var swiper = new Swiper('.swiper-container', {
+            //     scrollbar: {
+            //         el: '.swiper-scrollbar',
+            //         hide: true,
+            //     },
+            // });
+
+            // window.addEventListener('beforeunload', function (e) { 
+            //     e.preventDefault(); 
+            //     e.returnValue = '';
+            // }); 
+            // alert('123');
 
         </script>
     </body>

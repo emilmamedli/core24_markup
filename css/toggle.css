@@ -43,15 +43,27 @@ p {
 }
     
 /* Checkbox cheked effect */
-    .checkbox:checked + .toggle::after {
+    .checkbox:checked ~ .toggle::after {
     left : 49px;
     left: 1.2rem;
 }
     
 /* Checkbox cheked toggle label bg color */
-.checkbox:checked + .toggle {
+.checkbox:checked ~ .toggle {
     background-color: #27AE60;
     border: 2px solid #27AE60;
+}
+
+.title-not-checked, .title-checked {
+    display: none!important;
+}
+
+.checkbox:checked ~ .title-not-checked {
+    display: inline-block!important;
+}
+
+.checkbox:not(:checked) ~ .title-checked {
+    display: inline-block!important;
 }
     
 /* Checkbox vanished */

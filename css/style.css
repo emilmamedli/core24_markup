@@ -1,16 +1,19 @@
 body {
-    min-height: 100vh;
+    /* min-height: 480px; */
+    font-family: 'Inter', sans-serif;
 }
 
 .sidebar-left-container {
     position: fixed;
-    width: 88px;
+    /* width: 88px; */
+    width: 4.5rem;
+    /* width: 6vw; */
     height: 100vh;
     left: 0px;
     top: 0px;
     background: linear-gradient(180deg, #2566F3 0%, #164BBD 100%);
     background-repeat: no-repeat;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .logo {
@@ -50,6 +53,17 @@ body {
     background-image: url(../image/pharmacy.png);
 }
 
+.doctor-avatar-container {
+    padding: 0.8rem;
+}
+
+.switch-title {
+    display: inline-block;
+    color: #FFF;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+}
+
 
 
 #main-content {
@@ -68,15 +82,168 @@ body {
     height: 300px;
 } */
 
+.btn-circle-back {
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    width: 2.9rem;
+    padding: 0.6rem;
+}
+
+.arrow-back {
+    width: 80%;
+}
+
+.btn-rounded-patient-info {
+    padding: 0.6rem 1.5rem;
+    background-color: #F2F2F2;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+
+.btn img {
+    margin-right: 0.3rem;
+}
+
+.btn-rounded-consultation {
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+
+.btn.active {
+    background-color: #2F80ED;
+    color: white;
+}
+
+.btn-rounded-consultation img {
+    width: 1rem;
+}
+
+.avatar {
+    width: 3.5rem;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-info-block {
+    color: #828282;
+    font-size: 0.9rem;
+}
+
+.profile-info-block span {
+    margin-right: 1rem;
+}
+
+.service-container {
+    padding: 1.2rem;
+    min-height: 6rem;
+    background: #2D67B2;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.service-info {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.btn-info-service {
+    background-color: #2D9CDB;
+}
+
+.btn-medicament-request {
+    background-color: #EB5757;
+}
+
+.btn-consultation {
+    background-color: #6FCF97;
+}
+
+.btn-rounded {
+    padding: 0.2rem 1.2rem;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+}
+
+.block {
+    padding-top: 0.5rem;
+    background-color: #EFF1F5;
+    border-radius: 0.5rem;
+}
+
+.block-header {
+    padding: 2rem 2rem 0 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.block-body {
+    padding: 2rem;
+}
+
+.block-body:not(:last-of-type) {
+    border-bottom: 1px solid #E0E0E0;    
+}
+
+.block-title {
+    color: #828282;
+    font-size: 0.7rem;
+}
+
+.block-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.block-action {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.block-print-btn {
+    padding: 0.5rem 1.2rem;
+    background-color: #2F80ED;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.block-print-btn img {
+    width: 1.1rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.block-edit-btn {
+    padding: 0.5rem 1.2rem;
+    background-color: #27AE60;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.block-edit-btn img {
+    width: 1rem;
+    margin-right: 0.7rem;
+}
+
+.file-name {
+    color: #2F80ED;
+}
+
 
 #sidebar-right div{
     position: fixed;
-    width: 344px;
+    /* width: 344px; */
+    width: 18rem;
+    /* width: 24vw; */
     height: 100vh;
     right: 0px;
     top: 0px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
     background: #212839;
-    border-radius: 20px 0 0 20px;    
+    border-radius: 1rem 0 0 1rem;    
 }
