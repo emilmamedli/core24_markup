@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/toggle.css">
+        <link rel="stylesheet" href="css/toggle-custom.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+    <body>
+        <section id="sidebar-left">
+            <div class="sidebar-left-container">
+                <div class="py-4 d-flex flex-column justify-content-between h-100">
+                    <div class="text-center">
+                        <a href="#"><img src="image/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div>
+                        <nav class="nav flex-column justify-content-center text-center vertical-nav">
+                            <a class="nav-link my-2 button button-chat active" href="#"></a>
+                            <a class="nav-link my-2 button button-patients" href="#"></a>
+                            <a class="nav-link my-2 button button-pharmacy" href="#"></a>
+                            <a class="nav-link my-2 button button-notification" href="#"></a>
+                        </nav>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="text-center mb-2 doctor-avatar-container">
+                                <a href="#"><img src="image/avatar.png" alt="" class="rounded-circle img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="checkbox" id="switch" class="checkbox" checked/>
+                            <span class="switch-title title-not-checked mb-2">Müraciət qəbul et</span>
+                            <span class="switch-title title-checked mb-2">Müraciət qəbul etmə</span>
+                            <label for="switch" class="toggle">
+                                <p></p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main-content">
+            <div class="container-fluid m-4">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="chat-head-container">
+                            <!-- Swiper -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                                <div class="swiper-slide">Slide 10</div>
+                                </div>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 d-flex">
+                        <div>
+                            <a href="#" class="btn btn-circle-back"><img src="image/arrow-left.png" alt="" class="arrow-back"></a>
+                        </div>
+                        <div class="ml-3">
+                            <span class="profile-name">Xroniki Astma, Orta | ID: 123456</span>
+                            <div class="profile-info-block">
+                                <span>12 March, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <div>
+                            <a href="" class="btn btn-rounded-patient-info"><img src="image/icon-avatar-dark.png" alt="">Pasiyent məlumatları</a>
+                        </div>
+                        <div class="ml-3">
+                            <a href="" class="btn btn-rounded-consultation active"><img src="image/stethoscope.png" alt=""> Müayinə</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-8">
+                        <a href="#" class="btn btn-rounded mr-2">Şikayətlər/Simptomlar</a>
+                        <a href="#" class="btn btn-rounded mr-2">Təyinat</a>
+                        <a href="#" class="btn btn-rounded active">Dərman resepti</a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a href="#" class="btn btn-rounded">Yekun təyinat sənədi</a>                        
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <form action="">
+                            <div class="form-block">
+                                <div>
+                                    <div class="form-block-header">Preparat</div>
+                                    <div class="form-block-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-block-title">Dərman / Tərkib</div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Formaseftik formasl</div>
+                                                <input type="text" class="form-control">
+                                            </div>                                            
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <div class="form-block-title">Dozası</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">400</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Ölçü vahidi</div>
+                                                <input type="text" class="form-control">
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="form-block-header">Qəbul qaydası</div>
+                                    <div class="form-block-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-block-title">Qəbul qaydası</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">Peroral</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Qəbul miqdarı</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">1</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Qəbul vahidi</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">ədəd</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Qəbul müddəti</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">30 gün</option>
+                                                </select>
+                                            </div>                                            
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <div class="form-block-title">İstifadəsi üsulu</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">Yeməkdən əvvəl</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Qəbul tezliyi</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">gündə 2 dəfə</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                            </div>                                            
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <input type="checkbox" id="morning">
+                                                <label for="morning" class="mr-3 checkbox-label">Səhər</label>
+                                                <input type="checkbox" id="noon">
+                                                <label for="noon" class="mr-3 checkbox-label">Günorta</label>
+                                                <input type="checkbox" id="evening">
+                                                <label for="evening" class="checkbox-label">Axşam</label>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <div class="toggle-custom-container">
+                                                    <span class="toggle-text-left">Dərman adı ilə göndər</span>
+                                                    <input type="checkbox" id="switch-feedback" class="checkbox toggle-custom-input" checked/>
+                                                    <label for="switch-feedback" class="toggle-custom">
+                                                        <p></p>
+                                                    </label>
+                                                    <span class="toggle-text-right">Təsiredici maddə adı ilə göndər</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-block-header">Preparat</div>
+                                    <div class="form-block-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-block-title">Dərman / Tərkib</div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Formaseftik formasl</div>
+                                                <input type="text" class="form-control">
+                                            </div>                                            
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <div class="form-block-title">Dozası</div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="1">400</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-block-title">Ölçü vahidi</div>
+                                                <input type="text" class="form-control">
+                                            </div>                                            
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <div class="toggle-custom-container">
+                                                    <span class="toggle-text-left">Dərman adı ilə göndər</span>
+                                                    <input type="checkbox" id="switch-feedback" class="checkbox toggle-custom-input" checked/>
+                                                    <label for="switch-feedback" class="toggle-custom">
+                                                        <p></p>
+                                                    </label>
+                                                    <span class="toggle-text-right">Təsiredici maddə adı ilə göndər</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-6">
+                                                <button class="btn btn-add mr-2"><img src="image/add-dark.png" alt="">Əlavə et</button>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <button class="btn btn-add"><img src="image/remove-color.png" alt="">Sil</button>
+                                            </div>                                        
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="row">
+                                    <div class="col text-right">
+                                        <button class="btn block-finish-btn">Bitir və yekun təyinata bax</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sidebar-right">
+            <div>
+
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+        <script>
+
+            // var swiper = new Swiper('.swiper-container', {
+            //     scrollbar: {
+            //         el: '.swiper-scrollbar',
+            //         hide: true,
+            //     },
+            // });
+
+            // window.addEventListener('beforeunload', function (e) { 
+            //     e.preventDefault(); 
+            //     e.returnValue = '';
+            // }); 
+            // alert('123');
+
+        </script>
+    </body>
+</html>

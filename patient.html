@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/toggle.css">
@@ -79,10 +80,14 @@
                         <div class="ml-3">
                             <span class="profile-name">Bella</span>
                             <div class="profile-info-block">
-                                <span>14.02.1978</span>|
-                                <span>L45DS56</span>|
-                                <span>+99470 290 09 13</span>|
-                                <span>Atəşgah sığorta</span>|
+                                <span>14.02.1978</span>
+                                <span class="vertical-line"></span>
+                                <span>L45DS56</span>
+                                <span class="vertical-line"></span>
+                                <span>+99470 290 09 13</span>
+                                <span class="vertical-line"></span>
+                                <span>Atəşgah sığorta</span>
+                                <span class="vertical-line"></span>
                                 <span>202984</span>
                             </div>
                         </div>
@@ -93,6 +98,267 @@
                         <span class="profile-name">Konsultasiyalar</span>
                         <div class="profile-info-block">
                             <span>Lorem Ipsum is simply dummy text of the printing</span>
+                        </div>
+                    </div>
+                </div>                
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="patient-main-block">
+                            <div class="row">
+                                <div class="col d-flex">
+                                    <div class="mr-3 patient-circle-green">
+                                        <img src="image/stethoscope.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="panel-title">
+                                            <span>Yeni konsultasiyaya başla</span>
+                                        </div>
+                                        <div class="panel-text">
+                                            <span>Lorem Ipsum is simply dummy text of the printing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-right l-height">
+                                    <button class="btn block-pediator-btn mr-2"><img src="image/carriage.png" alt="">Pediator</button>
+                                    <button class="btn block-therapist-btn"><img src="image/human.png" alt="">Terapevt</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="d-flex justify-content-between panel-heading" data-toggle="collapse" data-target="#collapse1">
+                                    <div class="d-flex panel-heading-container">
+                                        <div>
+                                            <img src="image/stethoscope-color.png" alt="" class="panel-heading-image">
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="panel-text-container">
+                                                <div class="panel-title">
+                                                    <span>İlkin rəy: </span>
+                                                    <span>Bronxit</span>
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>2 January, 2020</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="panel-title">
+                                                    <span>Son rəy: </span>
+                                                    <span>Astma</span>                                 
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>24 Dekabr, 2020</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mr-4 mt-1 button-container-toggleable">
+                                        <button class="btn block-consultation-btn mr-2">Konsultasiyaya başla</button>
+                                        <button class="btn block-appointment-btn">Təyinata bax</button>
+                                    </div>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Astma</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>24 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. V.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>22 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>20 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="d-flex justify-content-between panel-heading" data-toggle="collapse" data-target="#collapse2">
+                                    <div class="d-flex panel-heading-container">
+                                        <div>
+                                            <img src="image/stethoscope-color.png" alt="" class="panel-heading-image">
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="panel-text-container">
+                                                <div class="panel-title">
+                                                    <span>İlkin rəy: </span>
+                                                    <span>Bronxit</span>
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>2 January, 2020</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="panel-title">
+                                                    <span>Son rəy: </span>
+                                                    <span>Astma</span>                                 
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>24 Dekabr, 2020</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mr-4 mt-1 button-container-toggleable">
+                                        <button class="btn block-consultation-btn mr-2">Konsultasiyaya başla</button>
+                                        <button class="btn block-appointment-btn">Təyinata bax</button>
+                                    </div>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Astma</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>24 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. V.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>22 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>20 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="d-flex justify-content-between panel-heading" data-toggle="collapse" data-target="#collapse3">
+                                    <div class="d-flex panel-heading-container">
+                                        <div>
+                                            <img src="image/stethoscope-color.png" alt="" class="panel-heading-image">
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="panel-text-container">
+                                                <div class="panel-title">
+                                                    <span>İlkin rəy: </span>
+                                                    <span>Bronxit</span>
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>2 January, 2020</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="panel-title">
+                                                    <span>Son rəy: </span>
+                                                    <span>Astma</span>                                 
+                                                </div>
+                                                <div class="panel-text">
+                                                    <span>24 Dekabr, 2020</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mr-4 mt-1 button-container-toggleable">
+                                        <button class="btn block-consultation-btn mr-2">Konsultasiyaya başla</button>
+                                        <button class="btn block-appointment-btn">Təyinata bax</button>
+                                    </div>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Astma</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>24 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. V.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>22 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="panel-body-container">
+                                            <div class="panel-title-2">
+                                                <span>Son rəy: </span>
+                                                <span>Bronxit</span>
+                                            </div>
+                                            <div class="panel-text">
+                                                <span>20 Dekabr, 2020 14:30</span>
+                                                <span class="panel-dot" ></span>
+                                                <span>Dr. A.Məhərrəmov</span>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
