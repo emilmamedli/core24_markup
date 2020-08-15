@@ -269,7 +269,20 @@ body {
     padding: 1.1rem;
 }
 
+
 .btn-new-template img {
+    width: 1.7rem;
+}
+
+.btn-view-profile {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #2F80ED;
+    padding: 1.1rem;
+}
+
+.btn-view-profile img {
     width: 1.7rem;
 }
 
@@ -330,6 +343,12 @@ body {
 
 .panel-group {
     width: 100%;
+}
+
+.panel-default {
+    background-color: #F2F2F2;
+    margin: 0.4rem 0;
+    border-radius: 0.2rem;
 }
 
 .panel-heading, .panel-body-container {
@@ -458,8 +477,20 @@ select.form-control {
     padding: 0.2rem 1rem;
 }
 
+select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url(../image/down-dark.png);
+    background-position: right 0.3rem center;
+    background-size: 0.7rem;
+	background-repeat: no-repeat;
+	outline: none;
+}
+
 .checkbox-label {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
@@ -485,6 +516,96 @@ select.form-control {
     color: #219653;
 }
 
+.vertical-align {
+    margin-top: 27vh;
+}
+
+body.no-sidebars {
+    background-color: #E5E5E5;
+}
+
+body.no-sidebars #main-content {
+    margin: 0!important;
+    padding: 3rem;
+}
+
+body.no-sidebars .cabinet-head-container {
+    background-color: white;
+
+}
+
+.cabinet-head-container {
+    background-color: #F2F2F2;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+.cabinet-block {
+    background-color: #FFF;
+    border-radius: 1rem;
+}
+
+.btn-change-password {
+    font-size: 0.7rem;
+}
+
+.btn-change-password img {
+    width: 0.7rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.text-blue {
+    color: #2F80ED;
+}
+
+.text-green {
+    color: #27AE60;
+}
+
+.text-green-2 {
+    color: #43DB2D;
+}
+
+.text-gray {
+    color: #BDBDBD;
+}
+
+.date-input {
+    padding-left: 2.3rem;
+    background-image: url(../image/calendar.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 0.7rem center;
+}
+
+.pharmacy-text {
+    font-size: 0.75rem;
+    color: #828282;
+}
+
+.pharmacy-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.pharmacy-dot {
+    float: left;
+    padding-top: 0.7rem;
+    font-size: 0.7rem;
+}
+
+.notification-main-block {
+    padding: 1rem 0;
+}
+
+.notification-underline {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 0.5rem;
+}
+
+
+
 #sidebar-right div{
     position: fixed;
     /* width: 344px; */
@@ -494,14 +615,6 @@ select.form-control {
     right: 0px;
     top: 0px;
     /* overflow-y: scroll; */
-
     background: #212839;
     border-radius: 1rem 0 0 1rem;    
-}
-
-.panel-default {
-    background-color: #F2F2F2;
-    /* padding: 1rem; */
-    margin: 0.4rem 0;
-    border-radius: 0.2rem;
 }
