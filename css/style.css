@@ -419,6 +419,21 @@ body {
     font-family: "FontAwesome";
 }
 
+.vertical-line-bold {
+    position: relative;
+    padding: 0 0.4rem;
+}
+
+.vertical-line-bold::after {
+    content: "\007C";
+    position: absolute;
+    top: -0.2rem;
+    right: 0.3rem;
+    font-weight: bolder;
+    font-size: 0.95rem;
+    font-family: "Arial Black";
+}
+
 .panel-dot {
     padding: 0 0.6rem;
     position: relative;
@@ -603,6 +618,34 @@ body.no-sidebars .cabinet-head-container {
     border-bottom: 1px solid #E0E0E0;
     padding-bottom: 0.5rem;
 }
+
+input[type="text"], select.form-control, textarea.form-control {
+    border: 1px solid transparent;
+    border-bottom: 2px solid #000000;
+    margin: 1.3rem;
+    height: 4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.form-control:focus {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 2px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline:none;
+
+}
+
+.form-block-body-pincode {
+    padding: 0.6rem 0;
+}
+
+
+
+
 
 
 
