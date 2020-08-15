@@ -619,7 +619,7 @@ body.no-sidebars .cabinet-head-container {
     padding-bottom: 0.5rem;
 }
 
-input[type="text"], select.form-control, textarea.form-control {
+input[type="text"].pincode-input-text {
     border: 1px solid transparent;
     border-bottom: 2px solid #000000;
     margin: 1.3rem;
@@ -628,7 +628,7 @@ input[type="text"], select.form-control, textarea.form-control {
     font-size: 1.5rem;
 }
 
-.form-control:focus {
+.pincode-input-text:focus {
     border-top-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
